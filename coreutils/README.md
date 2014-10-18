@@ -5,4 +5,3 @@ linux的外部命令。
 ##官方源码
 [coreuils](http://ftp.gnu.org/gnu/coreutils/)
 ##已完成
-* cd
