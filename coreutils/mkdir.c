@@ -1,9 +1,4 @@
-#include<stdio.h>
-#include<getopt.h>
-#include<string.h>
-#include<errno.h>
-#include<sys/stat.h>
-#include<sys/types.h>
+#include "diy.h"
 int main(int argc,char **argv)
 {
     if(argc==1)
