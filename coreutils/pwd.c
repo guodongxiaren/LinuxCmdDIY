@@ -1,10 +1,8 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <limits.h>
+#include "diy.h"
+
 int main()
 {
-    char a[PATH_MAX];
+    char a[PATH_MAX]; //PATH_MAX定义在<limits.h>中
     if(getcwd(a,PATH_MAX)==NULL)
     {
         exit(1);

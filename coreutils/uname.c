@@ -1,6 +1,7 @@
 #include "diy.h"
 #include "uname.h"
 
+const char *arguments = "asnrvmpio"; 
 const struct option long_opts[] = {
     {"all",no_argument,0,'a'},
     {"kernel-name",no_argument,0,'s'},
@@ -15,7 +16,7 @@ const struct option long_opts[] = {
     {"version",no_argument,0,0},
     {0,0,0,0}
 };
-char *arguments = "asnrvmpio"; 
+
 int main(int argc,char **argv){
     int c;
     int index = 0;
@@ -107,9 +108,5 @@ void uname_help(){
 }
 
 void uname_version(){
-/*    printf("版本:%.2f\n",1.00);
-    printf("未完善的功能及bug请查看<%s>\n",WEBSITE(uname));
-    printf("%s\n",AUTHOR);
-    */
     __version(1.00,__FILE__);
 }

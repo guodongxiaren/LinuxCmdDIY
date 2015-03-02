@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -I include 
+CFLAGS = -I include -g 
 SRCS = $(wildcard *.c)
 OBJS = $(patsubst %.c,bin/%,$(SRCS))
 
